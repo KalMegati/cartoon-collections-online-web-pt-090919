@@ -12,5 +12,8 @@ end
 
 def find_the_cheese(assortment)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.length.times { |index| return cheese_types[index] if assortment.include?(cheese_types[index]) }
+  cheese_types.length.times { |index|
+    return cheese_types[index] if assortment.include?(cheese_types[index])
+  }
+  nil
 end
