@@ -15,5 +15,5 @@ def find_the_cheese(assortment)
   cheese_types.length.times { |index|
     return cheese_types[index] if assortment.include?(cheese_types[index])
   }
-  
+  NIL
 end
